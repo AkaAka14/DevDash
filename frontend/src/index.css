@@ -1,0 +1,68 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+
+/* lavender-beige gradient background */
+body.lavender-beige {
+  background: linear-gradient(135deg, #e6e6fa 0%, #f5f5dc 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+nav { background: #333; padding: 0.5rem; color: white; }
+a { color: white; margin-right: 1rem; text-decoration: none; }
+.container { padding: 1rem; max-width: 800px; margin: auto; }
+
+/* authentication landing and forms */
+.auth-landing { display: flex; align-items: center; justify-content: center; min-height: 80vh; }
+.auth-container {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+}
+.auth-form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.6);
+  transition: background 0.3s ease;
+}
+.auth-form input:focus {
+  background: rgba(255,255,255,0.8);
+}
+.auth-form button {
+  width: 100%;
+  padding: 0.5rem;
+  background: #6a5acd;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.auth-form button:hover {
+  background: #7b68ee;
+}
+
+/* fade animation for form appearance */
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+.auth-form .error { color: red; margin-top: 0.5rem; }
+.link-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1em;
+}
